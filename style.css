@@ -3,8 +3,6 @@
   src: url(./fonts/xirod.otf);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700&display=swap');
-
 html {
   font-size: 10px;
   background-size: cover;
@@ -12,6 +10,7 @@ html {
   user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
+  
 }
 
 body {
@@ -29,9 +28,6 @@ body {
   margin-top: 20px;
   user-select: none;
   -ms-user-select: none;
-  -webkit-user-select: none;
-  -webkit-user-select: none;
-  -webkit-user-select: none;
   -webkit-user-select: none;
 }
 
@@ -74,6 +70,7 @@ kbd {
   font-family: "NERD";
   user-select: none;
   -ms-user-select: none;
+  -webkit-user-select: none;
 }
 
 .sound {
