@@ -93,6 +93,8 @@ kbd {
     overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
+    user-select: none;
+    -ms-user-select: none;
   }
 
 
