@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "NERD" ;
+  src: url(./fonts/xirod.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700&display=swap');
+
+html {
+  font-size: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  user-select: none;
+  -ms-user-select: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "NERD";
+  user-select: none;
+  -ms-user-select: none;
+}
+
+.title  {
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 20px;
+  user-select: none;
+  -ms-user-select: none;
+}
+
+
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
+  user-select: none;
+  -ms-user-select: none;
+
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+  font-family: "NERD";
+  user-select: none;
+  -ms-user-select: none;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  html {
+    margin: 0;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
+  .keys {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    padding: 100px 0px 0px 0px;
+    user-select: none;
+    -ms-user-select: none;
+  }
+
+  .title {
+    font-size: 15px;
+    color: white;
+    margin: 30px 10px 60px;
+    user-select: none;
+    -ms-user-select: none;
+  } 
+}
+  
