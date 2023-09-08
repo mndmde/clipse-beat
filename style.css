@@ -11,6 +11,7 @@ html {
   background-repeat: no-repeat;
   user-select: none;
   -ms-user-select: none;
+  -webkit-user-select: none;
 }
 
 body {
@@ -19,6 +20,7 @@ body {
   font-family: "NERD";
   user-select: none;
   -ms-user-select: none;
+  -webkit-user-select: none;
 }
 
 .title  {
@@ -27,6 +29,10 @@ body {
   margin-top: 20px;
   user-select: none;
   -ms-user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-select: none;
 }
 
 
@@ -52,6 +58,7 @@ body {
   text-shadow: 0 0 .5rem black;
   user-select: none;
   -ms-user-select: none;
+  -webkit-user-select: none;
 
 }
 
@@ -95,6 +102,7 @@ kbd {
     background-repeat: no-repeat;
     user-select: none;
     -ms-user-select: none;
+    -webkit-user-select: none;
   }
 
   .title {
@@ -107,6 +115,7 @@ kbd {
     font-size: 15px;
     user-select: none;
     -ms-user-select: none;
+    -webkit-user-select: none;
   }
 
   .keys {
@@ -119,16 +128,19 @@ kbd {
     padding: 100px 0px 0px 0px;
     user-select: none;
     -ms-user-select: none;
+    -webkit-user-select: none;
   }
   
   .key {
     user-select: none;
     -ms-user-select: none;
+    -webkit-user-select: none;
   }
 
   .footer {
     user-select: none;
-    -ms-user-select: none; 
+    -ms-user-select: none;
+    -webkit-user-select: none; 
   }
 }
   
