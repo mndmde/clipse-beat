@@ -1,7 +1,15 @@
 (()=>{document.documentElement.style="touch-action: manipulation;"})()
 
+document.addEventListener("touchstart", e => {
+  console.log("Start")
+})
+
+document.addEventListener("touchmove", e => {
+  console.log("Move")
+})
+
 document.addEventListener("touchend", e => {
-  console.log(e)
+  console.log("End")
 })
 
 function pic() {
@@ -43,4 +51,4 @@ function playSoundOnClick(e) {
   }
 }
 
-keys.forEach((element, index) => element.addEventListener('touchstart', () => playSoundOnClick({ keyCode: keys[index].getAttribute('data-key') })));
+keys.forEach((element, index) => element.addEventListener('touch', () => playSoundOnClick({ keyCode: keys[index].getAttribute('data-key') })));
