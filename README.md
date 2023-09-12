@@ -1,5 +1,5 @@
 # clipse-beat
-Inspired by <a href”https://javascript30.com/”>javascript30</a>. When working on the drum kit project, the song Grindin’ by The Clipse came to my head. I just wanted to make something fun and nostalgic that my peers and music enthusiasts can appreciate.
+Inspired by javascript30. When working on the drum kit project, the song Grindin’ by The Clipse came to my head. I just wanted to make something fun and nostalgic that my peers and music enthusiasts can appreciate.
 
 Here was the checklist for this project: 
 
