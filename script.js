@@ -1,33 +1,38 @@
-function pic() {
-    var bgm = ['./bg/1.jpeg','./bg/2.jpeg','./bg/3.jpeg'];
+(()=>{document.documentElement.style="touch-action: manipulation;"})()
 
-    $('html').css({
-        'background' : 'url('+ bgm[Math.floor(Math.random() * bgm.length)] + ') no-repeat',
-        'background-position' : 'center',
-    });
+document.addEventListener("touchend", e => {
+  console.log(e)
+})
+
+function pic() {
+  var bgm = ['./bg/1.jpeg','./bg/2.jpeg','./bg/3.jpeg'];
+  $('html').css({
+    'background' : 'url('+ bgm[Math.floor(Math.random() * bgm.length)] + ') no-repeat',
+    'background-position' : 'center',
+  });
 }
 pic();
 
-  function removeTransition(e) {
-    if (e.propertyName !== 'transform') return;
-    e.target.classList.remove('playing');
-  }
+function removeTransition(e) {
+  if (e.propertyName !== 'transform') return;
+  e.target.classList.remove('playing');
+}
 
-  function playSound(e) {
-    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-    const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
-    if (!audio) return;
+function playSound(e) {
+  const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+  const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+  if (!audio) return;
 
-    key.classList.add('playing');
-    audio.currentTime = 0;
-    audio.play();
-  }
+  key.classList.add('playing');
+  audio.currentTime = 0;
+  audio.play();
+}
 
-  const keys = Array.from(document.querySelectorAll('.key'));
-  keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-  window.addEventListener('keydown', playSound);
+const keys = Array.from(document.querySelectorAll('.key'));
+keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+window.addEventListener('keydown', playSound);
 
-  function playSoundOnClick(e) {
+function playSoundOnClick(e) {
   const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
   const key = document.querySelector(`div[data-key="${e.keyCode}"]`); 
 
@@ -38,4 +43,4 @@ pic();
   }
 }
 
-keys.forEach((element, index) => element.addEventListener('click', () => playSoundOnClick({ keyCode: keys[index].getAttribute('data-key') })));
+keys.forEach((element, index) => element.addEventListener('touchend', () => playSoundOnClick({ keyCode: keys[index].getAttribute('data-key') })));
