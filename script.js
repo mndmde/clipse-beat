@@ -43,4 +43,4 @@ function playSoundOnClick(e) {
   }
 }
 
-keys.forEach((element, index) => element.addEventListener('touchend', () => playSoundOnClick({ keyCode: keys[index].getAttribute('data-key') })));
+keys.forEach((element, index) => element.addEventListener('touchstart', () => playSoundOnClick({ keyCode: keys[index].getAttribute('data-key') })));
