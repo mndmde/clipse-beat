@@ -13,7 +13,7 @@ document.addEventListener("touchend", e => {
 })
 
 function pic() {
-  var bgm = ['./bg/1.jpeg','./bg/2.jpeg','./bg/3.jpeg'];
+  var bgm = ['./bg/1.jpg','./bg/2.jpg','./bg/3.jpg','./bg/4.jpg','./bg/5.jpg','./bg/6.jpg','./bg/7.jpg'];
   $('html').css({
     'background' : 'url('+ bgm[Math.floor(Math.random() * bgm.length)] + ') no-repeat',
     'background-position' : 'center',
