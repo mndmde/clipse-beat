@@ -13,6 +13,11 @@ html {
   
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -109,6 +114,10 @@ kbd {
     user-select: none;
     -ms-user-select: none;
     -webkit-user-select: none;
+  }
+
+  a {
+    color: white;
   }
 
   body {
